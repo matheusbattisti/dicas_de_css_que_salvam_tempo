@@ -1,0 +1,102 @@
+div {
+  margin-bottom: 100px;
+}
+
+/* 1 Backdrop filter */
+.backdrop {
+  width: 300px;
+  height: 200px;
+  background-image: url("img/night.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #fff;
+}
+
+/* 2 - Object fit */
+.container {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 3 - All */
+.parent {
+  color: red;
+  font-size: 20px;
+  border: 2px solid blue;
+}
+
+.child {
+  all: initial;
+  color: black;
+}
+
+/* 4 - Text overflow */
+.overflow-text {
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid #ccc;
+}
+
+/* 5 - Clip path */
+.clip-path-example {
+  clip-path: circle(50% at 50% 50%);
+  background-color: teal;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  color: white;
+}
+
+/* 6 - Perspectiva */
+.perspective-container {
+  perspective: 600px;
+}
+
+.perspective-box {
+  background-color: salmon;
+  width: 200px;
+  height: 400px;
+  transform: rotateX(45deg);
+}
+
+/* 7 - Aspect ratio */
+.aspect-ratio-box {
+  aspect-ratio: 16 / 9;
+  background-color: red;
+  padding: 10px;
+  width: 50%;
+}
+
+/* 8 - Estilos para input */
+.styled-input {
+  border: 2px solid skyblue;
+  outline: none;
+  padding: 10px;
+}
+
+.styled-input::placeholder {
+  color: gray;
+}
+
+.styled-input:hover,
+.styled-input:focus {
+  border-color: deepskyblue;
+}
